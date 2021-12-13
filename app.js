@@ -5,32 +5,12 @@ const imgDestinations = document.querySelectorAll('.app-container-destination-it
 const imgDestinationsHovers = document.querySelectorAll('.app-container-destination-item-body__hover')
 
 menuBtn.onclick = function(){
-    modal.classList.remove('close');
+    modal.style.transform = 'translateX(0%)'
 }
 closeBtn.onclick = function(){
-    modal.classList.add('close');
+    modal.style.transform = 'translateX(100%)'
 }
-// imgDestinations.forEach(function(imgDestination){
-//     imgDestination.onmouseenter= function(){
-//         this.classList.add('close')
-//     }
 
-//     imgDestination.onmouseleave = function(){
-//         this.classList.remove('close')
-//     }
-// })
-
-
-// imgDestinationsHovers.forEach(item=>{
-//     item.onmouseenter=function(){
-//         item.classList.remove('close')
-//     }
-
-//     item.onmouseleave = function(){
-//         item.classList.add('close');
-
-//     }
-// })
 
 // Hàm để làm cho các ảnh chuyển động sau 1 khoảng thời gian 1 cách automatically
 var slideIndex = 0;
@@ -58,10 +38,6 @@ carousel()
 
 
 function clickTabUI(){
-    // tabUI_class= document.getElementById(`app-container-best-beach-slider-tabUI-item-${1}`)
-    // tabUI_class.onclick = function(){
-    //     console.log("Da kich vao")
-    // }
     tabUI_class.map(tabUI_element=>{
         tabUI_element.onclick = function(){
             // Vẫn chưa làm được

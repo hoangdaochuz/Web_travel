@@ -255,7 +255,8 @@
     background-color:var(--white-color);
     overflow: scroll;
     height: 100%;
-    animation: outIn ease-in-out 0.8s;
+    transform: translateX(100%);
+    transition: transform linear 0.5s;
     z-index: 3;
 }
 .close-icon{
@@ -436,15 +437,15 @@
 
 .app-container-destination-item:hover .app-container-destination-item-body{
     opacity: 0;
+    animation:fadeOut linear 0.5s;
 }
 .app-container-destination-item:hover .app-container-destination-item-body__hover{
     z-index: 0;
+    animation: fadeIn linear 0.5s;
     
 }
 
-/* .app-container-destination-item-body:hover{
-    opacity: 0;
-} */
+
 
 
 
